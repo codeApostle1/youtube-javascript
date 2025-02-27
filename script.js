@@ -18,7 +18,7 @@ searchInput.addEventListener('keyup', (e) => {
 
     // SEARCH WITH ENTER KEY
 
-    if (e.key = 'Enter') {
+    if (e.key == 'Enter') {
         googleSearch();
     }
 })
