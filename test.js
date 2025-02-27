@@ -60,3 +60,16 @@ for (let key in owner) {
 }
 }, 2000); // Simulates 2-second delay
 
+// document.getElementById("userForm").addEventListener("submit", function(event) {
+//   event.preventDefault(); // Prevents page refresh
+
+//   let name = document.getElementById("name").value; // Get input value
+//   document.getElementById("output").textContent = "Hello, " + name + "!";
+// });
+
+document.getElementById("message").addEventListener("input", function() {
+  let count = this.value.length; // Count characters
+  document.getElementById("charCount").textContent = count;
+});
+
+

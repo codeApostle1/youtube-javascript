@@ -10,6 +10,7 @@
     border: none ;  
     box-sizing: border-box;
     font: 14px / 28px sans-serif;
+    text-decoration: none;
 }
 
 .container {
@@ -28,12 +29,129 @@ nav {
 
 nav ul {
     float: right;
+    display: flex;
 
+}
+
+nav ul li {
+    padding: 0 15px;
+    
+}
+
+nav ul li a {
+    color: var(--text-dark);
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav li:last-of-type {
+    background-color: #1a73e8;padding: 4px 27px;
+    border-radius: 4px;
+}
+
+nav li:last-of-type a {
+    color: white;
+    text-decoration: none !important;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 
 main {
     height: 80vh;
     text-align: center;
+}
+
+main .google_logo {
+    
+    height: 250px;
+ 
+}
+
+main .google_logo img {
+   max-height: 115px;
+}
+
+main .google_search {
+    max-height: 164px;
+
+    padding: 20px;
+}
+
+main .google_search .search_field {
+    max-width: 580px;
+    height: 44px;
+    display: flex;
+    border: 1.8px solid #dfe1e5;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px 10px 16px;
+}
+
+main .google_search .search_field:hover {
+    box-shadow: 0 1px 6px #20212447;
+    border-color: #dfe1e500;
+
+}
+
+main .search_field-icon:not(:first-child) {
+    padding: 0 8px;
+
+
+}
+
+main .search_field input {
+    width: 445px;
+    height: 34px;
+    padding: 0 24px 0 8px;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+.clear {
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    right: 0;
+    display: none;
+}
+
+main .google_search-buttons {
+    margin-top: 18px;
+    
+}
+
+main .google_search-buttons button {
+    padding: 4px 16px;
+    background-color: #f8f9fa;
+    color: var(--text-light);
+    padding: 4px 16px;
+    margin: 11px 4px;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    user-select: none;
+}
+
+main .google_search-buttons button:hover {
+   color: var(--text-dark);
+   box-shadow: 0 1px 1px #0002;
+   border: 1px solid #dadce0;
+
+}
+
+main .google_search-buttons button a {
+    color: var(--text-light);
+}
+
+.search_field-input {
+    position: relative;
 }
 
 footer {
@@ -42,4 +160,8 @@ footer {
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
+}
+
+footer .footer-link {
+    margin: 0 8px;
 }
