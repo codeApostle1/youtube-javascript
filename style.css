@@ -65,11 +65,12 @@ nav li:last-of-type a {
 main {
     height: 80vh;
     text-align: center;
+ 
 }
 
 main .google_logo {
     
-    height: 250px;
+    height: 100px;
  
 }
 
@@ -117,10 +118,13 @@ main .search_field input {
 
 .clear {
     position: absolute;
-    font-size: 2rem;
+    font-size: 2.3rem;
     cursor: pointer;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     display: none;
+    
 }
 
 main .google_search-buttons {
@@ -164,4 +168,6 @@ footer {
 
 footer .footer-link {
     margin: 0 8px;
+    color: var(--text-light);
 }
+
